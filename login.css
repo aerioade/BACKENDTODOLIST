@@ -1,0 +1,107 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F9F9F9; /* Soft Off-White */
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #2C2C2C; /* Dark Charcoal */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #e8f0fe; /* Light Blue Background */
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    background-color: #ffffff; /* White Background on Focus */
+    border-color: #6A4C9C; /* Royal Purple Border on Focus */
+}
+
+button {
+    padding: 14px 28px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6A4C9C; /* Royal Purple */
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5D3F7B; /* Darker Purple on Hover */
+}
+
+p {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #6A4C9C; /* Royal Purple */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+}
